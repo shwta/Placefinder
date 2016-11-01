@@ -1,0 +1,246 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #efe3e3;
+    font-family: Roboto, Arial, sans-serif;
+}
+#map {position: absolute ! important;top: 40px;bottom: 0;right: 0;left: 0;}
+h2 {
+    text-align: center;
+    font-family: cursive;
+    margin: 0;
+    height: 40px;
+}
+#searchButton {
+    margin: auto;
+    width: 50%;
+}
+#container {
+    position: fixed;
+    height: 93%;
+    width: 379px;
+    display:block;
+    border-top-style: none !important;
+}
+
+input {
+    height: 20px;
+    width: 355px;
+    box-shadow: 7px 4px 5px 1px #55585d;
+    font: 15px sans-serif;
+    overflow-wrap: break-word;
+    padding: 10px;
+    outline: none;
+    z-index: 1000;
+    -webkit-appearance:none;
+}
+label {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.addressLabel,
+.hoursLabel,
+.websiteLabel,
+.phoneLabel {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.addressLabel {
+    background: no-repeat url("assets/icons.png") 0 -126px;
+    background-size: 24px 383px;
+}
+.websiteLabel {
+    background: no-repeat url("assets/icons.png") 0 -200px;
+    background-size: 24px 383px;
+}
+.phoneLabel {
+    background: no-repeat url("assets/icons.png") 0 -326px;
+    background-size: 24px 383px;
+}
+.hoursLabel {
+    background: no-repeat url("assets/icons.png") 0 0;
+    background-size: 24px 383px;
+}
+img {
+    float: left;
+    padding-right: 5px;
+    height:150px;
+    width: 150px;
+
+    ]: block
+    padding-top: 5;
+    padding-top: 15px;
+}
+.placeDetails {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+#list .placeDetails {
+    margin-left: 151px;
+    margin-top: 8px;
+}
+.content {
+    min-height: 170px;
+    border-top: groove 1px #ece9e9;
+    padding-bottom: 5px;
+    text-overflow: initial;
+}
+#list {
+    float: left;
+    z-index: 1000;
+    display:none;
+    margin-top: 4px;
+    width: 377px;
+    height: 100%;
+}
+select {
+    border: none;
+    padding: 0;
+    margin: 0;
+    bottom: 2px;
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    font-size: 11px;
+    width: 193px;
+    font-family: sans-serif;
+    background-color: #ebf2f5;
+}
+h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    margin-top: 16px;
+}
+span.stars span {
+    background-position: 0 0 !important;
+}
+.stars,
+.stars span {
+    display: inline-block;
+    background: url("assets/stars.png") 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+a{
+  /* overflow-wrap: break-word; */
+  /* word-wrap: break-word; */
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all !important;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+button#collapse {
+  display:none;
+  left: 387px;
+  top: 40px;
+  z-index: 1;
+  height: 32px;
+  width: 35px;
+  font-weight: bold;
+  border: 2px groove;
+  background: #83949a;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 1px 5px 1px #747682;
+  outline: none;
+  cursor: pointer ! important;
+  color: #5c1410;
+  position:fixed;
+
+}
+div#footer {
+    bottom: 0px;
+    height: 49px;
+    width: 379px;
+    background: #616f71;
+    display:none;
+    z-index: 1;
+    border: 5px groove;
+    border-top: 1px groove;
+    clear: both;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+}
+div#footer button {
+    font-weight: bold;
+    float: right;
+    padding: 8px;
+    border: 2px groove;
+    right: 0px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 6px;
+    border-radius: 4px;
+    background: #ebf2f5;
+    color: #5c1410;
+}
+#next{
+    margin-right: 20px;
+}
+span.priceRange {
+    float: right;
+    margin-right: 90px;
+    color: #5c1410;
+}
+span.num {
+    color: #5c1410;
+}
+
+@media screen and (max-width: 420px) {
+    #container {
+        width:330px;
+    }
+    #footer {
+      width: 353px !important;
+    }
+    #collapse{
+      left: 338px !important;
+    }
+    #pac-input {
+        width:335px;
+    }
+    #next{
+        margin-right: 25px;
+    }
+}
+#collapse {
+   transition:left 0.7s;
+}
+#collapse.collapsed {
+   left: 0 !important;
+
+}
+#container, #footer {
+   transition: width 0.7s;
+}
+#container.listCollapsed ,#footer.listCollapsed  {
+   width: 0 !important;
+
+}
+span.totalResults {
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  color: #b9eeff;
+}
+button:disabled{
+  background-color: #949494 !important;
+  color: #cac2c2 !important;
+  border: 2px groove #b7b4b4 !important;
+}

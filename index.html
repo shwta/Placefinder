@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place finder</title>
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Search Places</title>
+    <link rel="stylesheet" type="text/css" href="css/places.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Place finder</h2>
+    </header>
+      <button id= "collapse">></button>
+    <div id="map"></div>
+    <div id= "container">
+      <input id="pac-input" class="controls" type="text" placeholder="Enter Search query">
+      <div id="list"></div>
+      <div id="footer">
+        <button id="next">></button>
+        <button id="prev"><</button>
+      </div>
+    </div>
+
+    <script src="js/places.js"></script>
+    <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBd8IeiT-Xktc5gHinV-ndgq0qIB2Epmc&libraries=places&callback=placeSearch" async defer></script>
+  </body>
+</html>
