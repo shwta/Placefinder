@@ -277,7 +277,7 @@ function createContent(place) {
     });
     $("#collapse").show("slow");
 
-     htmlCount++
+     htmlCount++;
 
   }
 
